@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>forms</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,80 @@
   <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <h1>Hello World</h1>
+  <div id="app">
+
+    <main>
+      <div class="main-container">
+        <div class="back">
+          <img src="assets/icons/arrow-left-02.svg" alt="Back">
+          <span>Back</span>
+        </div>
+
+        <h1>Enrollment forms</h1>
+        <p>Fill the forms to get in the waiting list</p>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+
+            <legend>Child info</legend>
+            <div class="input-wrapper">
+              <label for="fullname">Full name</label>
+              <input id="fullname" type="text" placeholder="Child's name">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Birth date</label>
+              <input id="birth" type="date" name="birth">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="rather not to answer">Rather not to answer</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Medical information</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="Any medical information to be informed to school?"></textarea>
+            </div>
+
+            <div class="droparea-wrapper">
+              <input type="file" id="birth-file" name="birth-file">
+              <img src="assets/icons/cloud-upload.svg" alt="cloud symbol">
+              <p>
+                Click to select files
+              </p>
+            </div>
+            
+          </fieldset>
+        </form>
+
+
+      </div>
+    </main>
+
+    <aside>
+      <div class="aside-container">
+        
+        <header>
+          <img src="assets/icons/Logo.svg" alt="logo">
+          <h2>
+            Every <span>learning</span> moment counts
+          </h2>
+
+          <p>
+            Enroll your child in our school and watch them flourish in a welcoming, safe, and stimulating environment.
+          </p>
+        </header>
+
+        <img src="assets/icons/Illustration.svg" alt="">
+
+      </div>
+    </aside>
+
+  </div>
 </body>
 </html>
