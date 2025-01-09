@@ -110,6 +110,52 @@
             
           </fieldset>
 
+          <fieldset class="guardian">
+            <legend>Responsible information</legend>
+
+            <div class="input-wrapper">
+              <label for="guardian">Responsible's name</label>
+              <input type="text" id="guardian" name="guardian"><small>Main legal responsible and emergency contact</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="phone">Phone number</label>
+              <input type="text" id="phone" name="phone" placeholder="(99) 9 9999-9999"><small>Main legal responsible and emergency contact</small>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">Phone number</label>
+              <input type="email" id="email" name="email" required>
+              <div class="error">
+                <img src="assets/icons/alert-circle.svg" alt="">
+                <span>Insert a valid email</span>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="enroll-options">
+            <legend>Enrollment options</legend>
+
+            <div class="input-wrapper">
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" value="morning" id="morning">
+                <img src="assets/icons-2/sun-cloud-02.svg" alt="clouds">
+                <label for="morning">Morning</label>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <div class="radio-inner">
+                <div class="radio-image"></div>
+                <input type="radio" name="study-shift" value="afternoon" id="afternoon">
+                <img src="assets/icons-2/sun-02.svg" alt="clouds">
+                <label for="afternoon">Afternoon</label>
+              </div>
+            </div>
+
+          </fieldset>
 
         </form>
 
